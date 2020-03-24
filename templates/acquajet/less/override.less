@@ -1,0 +1,338 @@
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+@screen-slg: 1400px;
+
+.breadcrumb {
+margin-bottom: 0
+}
+
+.header-te-llamamos i {
+    font-size: 21px;
+    padding-right: 5px;
+}
+
+footer .footer-head {
+    border-bottom: 2px solid #FFF
+}
+
+.footer-left-icons img {
+    display: table-cell;
+    margin: 0 auto 5px
+}
+
+.social-network a img {
+    max-width: 48px
+}
+
+.footer-left-icons {
+    padding: 10px
+}
+
+.social-icons {
+    padding-top: 15px;
+}
+
+.social-icons a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.social-icons a img:hover {
+    -webkit-box-shadow: 0 0 7px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 7px rgba(255,255,255,1);
+    box-shadow: 0 0 7px rgba(255,255,255,1);
+    text-decoration: none
+}
+
+.footer-left-icons a {
+    display: block;
+    margin: 0 auto
+}
+
+.footer-left-icons a:hover {
+    -webkit-box-shadow: 0 0 7px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 7px rgba(255,255,255,1);
+    box-shadow: 0 0 7px rgba(255,255,255,1);
+    text-decoration: none
+}
+#sp-footer1 img, #sp-footer2 img, #sp-footer3 img {
+    display: inherit;
+}
+
+.espacio-blanco {
+    height: 100px;
+}
+
+#sp-pagebuilder-view #sp-header {
+    display: none;
+}
+
+.layout-edit-iframe .transparent-wrapper, .layout-edit .transparent-wrapper {
+    position: inherit;
+}
+
+.iconos-home img {
+    max-height: 200px;
+}
+
+.rota-palabras {
+    border-bottom: 5px solid #25c0ec;
+}
+
+.iconos-home {
+    .sp-group-title {
+        display: none !important;
+    }
+    h3.sppb-addon-title {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+}
+
+.border-blue-top {
+    border-top: 5px solid #25c0ec;
+}
+
+
+.show-on-scroll {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    z-index: 10002;
+    display: none;
+    .btn-scroll-disfruta {
+        background-color: rgba(219, 118, 0, 0.9);
+        padding: 8px 30px 8px 60px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        a {
+            color: #fff;
+            font-weight: bold;
+            background-image: url("/images/arrow-right.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding: 8px 70px 8px 30px;
+            &:hover {
+                text-decoration: none;
+                background-position: right center;
+                color: #fefefe!important;
+            }
+        }
+    }
+}
+
+.sppb-progress {
+    background-color: #cccccc;
+}
+
+.slider-home {
+    h1.slider-title-1 {
+        font-size:600%;color:#fff!important;text-align:left;text-shadow:0px 0px 10px rgba(0,0,0,0.1);font-weight: 300;
+    }
+    .btn {
+        min-width: 394px;
+    }
+}
+
+.destacado {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    border-left: 2px solid #06648c;
+    border-right: 2px solid #06648c;
+    margin-top: 10px;
+}
+
+.text-left {
+    .sppb-btn {
+        text-align: left;
+    }
+}
+
+.banner {
+    text-align: center;
+    .sppb-progress {
+        margin-bottom: 15px;
+    }
+    .sppb-btn {
+        margin-top: 30px;
+        border-width: 0px;
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    .sppb-addon-content {
+        font-size: 18px;
+    }
+}
+
+.banner-sostenibilidad {
+    h1 {
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+    }
+}
+
+@media (min-width: @screen-slg) {
+    .banner {
+        padding-top: 120px;
+        padding-left: 50px;
+        padding-right: 50px;
+        .sppb-row {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    }
+    .banner-empresa {
+        .columna-texto {
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+    }
+}
+
+@media (min-width: @screen-lg) and (max-width: @screen-slg) {
+    .banner {
+        padding-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .banner-empresa {
+        .columna-texto {
+            padding-left: 20px;
+            padding-right: 100px;
+        }
+    }
+
+    .banner-calidad {
+
+    }
+}
+
+@media (min-width: @screen-lg) {
+    .banner-dark {
+        color: #ffffff;
+    }
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .banner {
+        padding-top: 130px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: @screen-md) {
+    .transparent-wrapper {
+        position: inherit;
+    }
+    .banner {
+        padding-top: 320px;
+        .sppb-row {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-min){
+    .banner {
+        padding-top: 120px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: @screen-xs) {
+    .banner {
+        padding-top: 120px;
+        padding-left: 50px;
+        padding-right: 50px;
+        .sppb-row {
+
+        }
+    }
+}
+
+.nuestros-clientes-opinan {
+    h3, b {
+        color: #ffffff;
+    }
+}
+
+#sp-footer {
+    b {
+        color: #ffffff;
+    }
+}
+
+.sp-layer .btn i {
+    margin-right: 15px;
+}
+
+.testimonials {
+    blockquote {
+        min-height: 100px;
+    }
+    .opinion-verificada {
+        font-style: italic;
+    }
+}
+
+.content-image-100 {
+    .sppb-addon-image-layout-content {
+        width: 100%;
+    }
+}
+
+.bg-100 .sppb-image-holder{
+    background-size: contain;
+}
+
+/*Landing*/
+.ajax-form {
+    input {
+        &:focus {
+            &:-moz-placeholder {
+                color: transparent!important;
+            }
+            &:-ms-input-placeholder {
+                color: transparent!important;
+            }
+            &::-webkit-input-placeholder {
+                color: transparent!important;
+            }
+        }
+    }
+}

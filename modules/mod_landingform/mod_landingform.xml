@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Landing Form</name>
+    <author>Pedro Antonio Fernández Gómez</author>
+    <version>1.0.1</version>
+    <description>Landing Page Form for Acquajet</description>
+    <files>
+        <filename>mod_landingform.xml</filename>
+        <filename module="mod_landingform">mod_landingform.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+    </files>
+    <config>
+    </config>
+</extension>

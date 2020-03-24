@@ -1,0 +1,23 @@
+# Further details at http://www.fox.ra.it/forum/20-form-fields/9293-attachments-upload-button.html
+
+# Trying to turn off the php engine, causes an Error 500 on some Internet Service Providers, so that it is disabled by default.
+# However, the subsequent statements do basically the same thing.
+# If your host supports it, and you want ad additional security level,
+# feel free to enable it by the uncommenting the following line
+
+# php_flag engine off
+
+# Disable directory browsing
+Options All -Indexes
+
+# Forbid php code: php|php3|php4|php5|phps|phpt|pht|phtml|phar
+<FilesMatch ".+\.ph(p[345st]?|t|tml|ar)$">
+   order deny,allow
+   deny from all
+</FilesMatch>
+
+# Forbid html documents: htm|html
+<FilesMatch ".+\.htm(l?)$">
+   order deny,allow
+   deny from all
+</FilesMatch>

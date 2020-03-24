@@ -1,0 +1,10 @@
+.error-page-inner .box-white {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 20px 0px #fff;
+    padding: 10px 30px;
+}
+.error-page-inner .box-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px 0px #fff;
+    padding: 10px 30px;
+}
